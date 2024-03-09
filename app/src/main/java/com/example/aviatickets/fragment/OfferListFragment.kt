@@ -61,4 +61,14 @@ class OfferListFragment : Fragment() {
             }
         }
     }
+    call.enqueue(object : retrofit2.Callback<List<Offer>> {
+        override fun onResponse(call: Call<List<Offer>>, response: Response<List<Offer>>) {
+            TODO("Not yet implemented")
+        }
+
+        override fun onFailure(call: Call<List<Offer>>, t: Throwable) {
+            TODO("Not yet implemented")
+        }
+
+    })
 }
